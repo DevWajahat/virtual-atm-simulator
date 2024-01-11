@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual ATM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+</head>
+<body>
+    <header>
+        <h1>VIRTUAL ATM SIMULATOR</h1>
+    </header>
+    <div class="atm-container">
+        <h1>Virtual ATM</h1>
+        <div>
+            <h2>Enter Your Pin</h2>
+            <input type="password" name="pin" id="pin">
+            <button onclick="functionAtm()">Enter</button>
+        </div>
+        <div>
+            <h2>Enter Amount</h2>
+            <input type="number" name="amount" id="amount" >
+        </div>
+        <div class="options">
+            <button onclick="functionAmt()">Withdraw</button>
+            <button onclick="functionDeposit()">Deposit</button>
+            <button onclick="functionBalanceInquiry()">Balance Inquiry</button>
+            <button onclick="functionCardMiniStatement()">Card Mini Statement</button>
+            <button onclick="functionAccountMiniStatement()">Account Mini Statement</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <footer>
+        &copy; 2024 Virtual ATM Simulator. All rights reserved.Created By Syed Wajahat Abbas Rizvi A.K.A DevWajahat.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+</body>
+</html>

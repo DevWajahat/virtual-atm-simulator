@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('hqdefault.jpg') no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden; /* Remove horizontal scroll */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden; /* Remove vertical scroll */
+}
+
+.atm-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    max-width: 400px;
+    width: 80%;
+    overflow: hidden; /* Remove horizontal scroll */
+}
+
+input, button {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+    width: calc(100% - 16px); /* Adjusted width */
+    box-sizing: border-box; /* Box sizing includes padding */
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.options button {
+    width: 48%;
+    margin-bottom: 10px;
+}
